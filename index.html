@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Row Example</title>
+  
+  <style>
+    .heading_coninter h2{
+      text-align: center;
+    } 
+
+    .logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px; /* Adjusted margin */
+}
+
+.logo-container img {
+  max-width: 100px; /* Decreased max-width */
+  height: auto;
+  margin: 5px; /* Adjusted margin */
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo-container img:hover {
+  transform: scale(1.1);
+}
+
+.logo-container img:nth-child(5) {
+  max-width: 120px; /* Adjusted width for the fifth logo */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .logo-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+<div class="heading_coninter">
+<h2>Payment Mode</h2>
+</div>
+  <div class="logo-container">
+    <img src="VisaPayment.png" alt="Logo 1">
+    <img src="american-express.jpg" alt="Logo 2">
+    <img src="Mastercard.png" alt="Logo 3">
+    <img src="PayPal.png" alt="Logo 4">
+    <img src="WesternUnion.png" alt="Logo 5" >
+    <!-- Add more <img> tags for additional logos -->
+  </div>
+
+</body>
+</html>
